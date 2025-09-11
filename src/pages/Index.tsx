@@ -1,6 +1,6 @@
 import { useState } from "react";
 import LoadingScreen from "@/components/LoadingScreen";
-import Dashboard from "@/components/Dashboard";
+import { MainLayout } from "@/components/layout/MainLayout";
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -13,7 +13,7 @@ const Index = () => {
     return <LoadingScreen onComplete={handleLoadingComplete} />;
   }
 
-  return <Dashboard />;
+  return <MainLayout />;
 };
 
 export default Index;
