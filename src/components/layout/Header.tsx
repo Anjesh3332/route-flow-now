@@ -10,7 +10,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { ThemeToggle } from '@/components/ThemeToggle';
-import SearchBar from '@/components/SearchBar';
+import { SearchBarNew } from '@/components/SearchBarNew';
 import { Badge } from '@/components/ui/badge';
 
 interface HeaderProps {
@@ -65,7 +65,7 @@ export function Header({
 
       {/* Center section - Search */}
       <div className="flex-1 max-w-md mx-4">
-        <SearchBar onSelectResult={onSearchResult} />
+        <SearchBarNew onSelectResult={onSearchResult} />
       </div>
 
       {/* Right section */}
